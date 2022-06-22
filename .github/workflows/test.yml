@@ -7,8 +7,8 @@ jobs:
     if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
       - name: Dependabot Action Secret 
-        runs: echo -n "${{secrets.TEST}}" | od -A n -t x1
+        run: echo -n "${{secrets.TEST}}" | od -A n -t x1
       - name: Dependabot Secret
-        runs: echo -n "${{secrets.DB}}" | od -A n -t x1
+        run: echo -n "${{secrets.DB}}" | od -A n -t x1
       - name: Dependabot Env Secret
-        runs: runs: echo -n "${{secrets.ENV}}" | od -A n -t x1
+        run: echo -n "${{secrets.ENV}}" | od -A n -t x1
