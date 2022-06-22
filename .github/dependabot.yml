@@ -1,15 +1,13 @@
 ---
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "daily"
   - package-ecosystem: npm
     directory: "/javascript"
+    target-branch: "272be979fc9a5e8c3bed4dbaa27aa27363065431"
     schedule:
       interval: daily
   - package-ecosystem: bundler
     directory: "/ruby"
+    target-branch: "272be979fc9a5e8c3bed4dbaa27aa27363065431"
     schedule:
       interval: weekly
